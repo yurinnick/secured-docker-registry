@@ -1,0 +1,16 @@
+version: 0.1
+log:
+    level: debug
+storage:
+    filesystem:
+        rootdirectory: /registry
+    cache:
+        layerinfo: inmemory
+http:
+    addr: :5000
+    secret: asecretforlocaldevelopment
+    tls:
+        certificate: /certs/server.crt
+        key: /certs/server.key
+    debug:
+        addr: localhost:5001
